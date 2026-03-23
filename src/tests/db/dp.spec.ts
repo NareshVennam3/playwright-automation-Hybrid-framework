@@ -36,8 +36,8 @@ test.describe.serial('DB Tests', () => {
 
   // ✅ Update + Validate
   test('update employee name by id', async () => {
-    const id = 1; // safe after reset
-    const newName = 'Sudhakar_Designer';
+    const id = 10; // safe after reset
+    const newName = 'Naresh_QA_Lead';
 
     await pool.query(
       `UPDATE employees SET name=$1 WHERE id=$2`,
